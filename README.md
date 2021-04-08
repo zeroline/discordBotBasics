@@ -1,2 +1,9 @@
-# discordBotBasics
-Python discord bot basic files and structure to quick-start further projects
+# discordBotBoilerplate
+Python based basic boilerplate for discord bots
+
+# Requirements
+ todo
+# Build 
+ todo
+# Run
+ todo
