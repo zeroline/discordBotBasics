@@ -1,4 +1,6 @@
-# discordBotBoilerplate
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+
+# Python discord bot template
 Python based basic boilerplate for discord bots
 
 # Requirements

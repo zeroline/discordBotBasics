@@ -10,19 +10,19 @@ load_dotenv()
 # retrieve token
 token = os.getenv("DISCORD_TOKEN")
 
-# set bot's primary comamnd prefix
-primaryPrefix = 'myLittleBot.'
+# set bot's command prefixes
+prefixes = os.getenv("BOT_PREFIXES").split(',')
 
 # set bot description
-botDescription = 'I am a happy little bot'
+botDescription = os.getenv("BOT_DESCRIPTION")
 
 # set bot presence info text to type game and a nice text
-botPresenceText = 'with the Discord APIs.'
+botPresenceText = os.getenv("BOT_PRESENCE_TEXT")
 
 # define prefix
 def get_prefix(bot, msg):
     # add prefixes like ['bot.','botty.','&&&'] to avoid conflicts with other commands
-    prefixes = [primaryPrefix]
+    prefixes = prefixes
     return commands.when_mentioned_or(*prefixes)(bot, msg)
 
 bot = commands.Bot(command_prefix=get_prefix,description=botDescription)
